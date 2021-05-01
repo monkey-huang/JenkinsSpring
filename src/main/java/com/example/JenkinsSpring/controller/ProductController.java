@@ -10,12 +10,15 @@ import com.example.JenkinsSpring.dto.RequestProduct;
 import com.example.JenkinsSpring.dto.ResponseProduct;
 import com.example.JenkinsSpring.service.ProductService;
 
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 public class ProductController {
 	
 	@Autowired
 	private ProductService productService;
 	
+    @ApiOperation(value = "查詢產品名稱")
 	@RequestMapping(value= "/product", method = RequestMethod.POST)
 	public ResponseProduct findProduct(@RequestBody RequestProduct requestProduct) {
 		System.out.println("test");
