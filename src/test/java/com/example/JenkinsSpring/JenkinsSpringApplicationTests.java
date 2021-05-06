@@ -39,6 +39,8 @@ class JenkinsSpringApplicationTests {
 		
 		assertEquals(restTemplate.postForEntity(url, new RequestProduct("A09"),ResponseProduct.class)
 				.getBody().equals(ResponseProductTestNotFind), true);
-	}
+	
+		assertEquals(false, true);
+    }
 
 }
