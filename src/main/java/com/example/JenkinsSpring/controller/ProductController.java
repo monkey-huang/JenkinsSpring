@@ -18,7 +18,7 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 	
-    @ApiOperation(value = "查詢產品名稱test89")
+    @ApiOperation(value = "查詢產品名稱testF")
 	@RequestMapping(value= "/product", method = RequestMethod.POST)
 	public ResponseProduct findProduct(@RequestBody RequestProduct requestProduct) {
 		System.out.println("test");
